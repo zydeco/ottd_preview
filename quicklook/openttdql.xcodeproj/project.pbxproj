@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2856F7591535CA62002372BA /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2856F7581535CA62002372BA /* libz.dylib */; };
+		287C96501539CF5800513344 /* ottd.h in Headers */ = {isa = PBXBuildFile; fileRef = 287C964C1539CF5800513344 /* ottd.h */; };
+		287C96511539CF5800513344 /* ottd_loader.c in Sources */ = {isa = PBXBuildFile; fileRef = 287C964D1539CF5800513344 /* ottd_loader.c */; };
+		287C96521539CF5800513344 /* ottd_png.c in Sources */ = {isa = PBXBuildFile; fileRef = 287C964E1539CF5800513344 /* ottd_png.c */; };
+		287C96531539CF5800513344 /* ottd_preloader.c in Sources */ = {isa = PBXBuildFile; fileRef = 287C964F1539CF5800513344 /* ottd_preloader.c */; };
+		287C96891539FF7700513344 /* ottd_date.c in Sources */ = {isa = PBXBuildFile; fileRef = 287C96881539FF7700513344 /* ottd_date.c */; };
+		28A5DD691522120B00B01BD7 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A5DD681522120B00B01BD7 /* QuickLook.framework */; };
+		28A5DD6B1522120B00B01BD7 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A5DD6A1522120B00B01BD7 /* ApplicationServices.framework */; };
+		28A5DD6D1522120B00B01BD7 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A5DD6C1522120B00B01BD7 /* CoreServices.framework */; };
+		28A5DD6F1522120B00B01BD7 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A5DD6E1522120B00B01BD7 /* CoreFoundation.framework */; };
+		28A5DD751522120B00B01BD7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 28A5DD731522120B00B01BD7 /* InfoPlist.strings */; };
+		28A5DD771522120B00B01BD7 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 28A5DD761522120B00B01BD7 /* GenerateThumbnailForURL.c */; };
+		28A5DD791522120B00B01BD7 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 28A5DD781522120B00B01BD7 /* GeneratePreviewForURL.c */; };
+		28A5DD7B1522120B00B01BD7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 28A5DD7A1522120B00B01BD7 /* main.c */; };
+		28C1A0AB1535E4830081184C /* ottd_cg.c in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A0AA1535E4830081184C /* ottd_cg.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2856F7581535CA62002372BA /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		287C964C1539CF5800513344 /* ottd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ottd.h; sourceTree = "<group>"; };
+		287C964D1539CF5800513344 /* ottd_loader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ottd_loader.c; sourceTree = "<group>"; };
+		287C964E1539CF5800513344 /* ottd_png.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ottd_png.c; sourceTree = "<group>"; };
+		287C964F1539CF5800513344 /* ottd_preloader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ottd_preloader.c; sourceTree = "<group>"; };
+		287C96881539FF7700513344 /* ottd_date.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ottd_date.c; sourceTree = "<group>"; };
+		28A5DD651522120B00B01BD7 /* openttdql.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = openttdql.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		28A5DD681522120B00B01BD7 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		28A5DD6A1522120B00B01BD7 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		28A5DD6C1522120B00B01BD7 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		28A5DD6E1522120B00B01BD7 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		28A5DD721522120B00B01BD7 /* openttdql-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "openttdql-Info.plist"; sourceTree = "<group>"; };
+		28A5DD741522120B00B01BD7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		28A5DD761522120B00B01BD7 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
+		28A5DD781522120B00B01BD7 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		28A5DD7A1522120B00B01BD7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		28A5DD7C1522120B00B01BD7 /* openttdql-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "openttdql-Prefix.pch"; sourceTree = "<group>"; };
+		28C1A0AA1535E4830081184C /* ottd_cg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ottd_cg.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28A5DD601522120B00B01BD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2856F7591535CA62002372BA /* libz.dylib in Frameworks */,
+				28A5DD691522120B00B01BD7 /* QuickLook.framework in Frameworks */,
+				28A5DD6B1522120B00B01BD7 /* ApplicationServices.framework in Frameworks */,
+				28A5DD6D1522120B00B01BD7 /* CoreServices.framework in Frameworks */,
+				28A5DD6F1522120B00B01BD7 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28A5DD581522120B00B01BD7 = {
+			isa = PBXGroup;
+			children = (
+				28A5DD701522120B00B01BD7 /* quicklook */,
+				28A5DD671522120B00B01BD7 /* Frameworks */,
+				28A5DD661522120B00B01BD7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28A5DD661522120B00B01BD7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28A5DD651522120B00B01BD7 /* openttdql.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28A5DD671522120B00B01BD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2856F7581535CA62002372BA /* libz.dylib */,
+				28A5DD681522120B00B01BD7 /* QuickLook.framework */,
+				28A5DD6A1522120B00B01BD7 /* ApplicationServices.framework */,
+				28A5DD6C1522120B00B01BD7 /* CoreServices.framework */,
+				28A5DD6E1522120B00B01BD7 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28A5DD701522120B00B01BD7 /* quicklook */ = {
+			isa = PBXGroup;
+			children = (
+				28A5DD761522120B00B01BD7 /* GenerateThumbnailForURL.c */,
+				28A5DD781522120B00B01BD7 /* GeneratePreviewForURL.c */,
+				28C1A0AA1535E4830081184C /* ottd_cg.c */,
+				28C1A0B61535F8680081184C /* shared source */,
+				28A5DD7A1522120B00B01BD7 /* main.c */,
+				28A5DD711522120B00B01BD7 /* Supporting Files */,
+			);
+			name = quicklook;
+			sourceTree = "<group>";
+		};
+		28A5DD711522120B00B01BD7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28A5DD721522120B00B01BD7 /* openttdql-Info.plist */,
+				28A5DD731522120B00B01BD7 /* InfoPlist.strings */,
+				28A5DD7C1522120B00B01BD7 /* openttdql-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28C1A0B61535F8680081184C /* shared source */ = {
+			isa = PBXGroup;
+			children = (
+				287C96881539FF7700513344 /* ottd_date.c */,
+				287C964C1539CF5800513344 /* ottd.h */,
+				287C964D1539CF5800513344 /* ottd_loader.c */,
+				287C964E1539CF5800513344 /* ottd_png.c */,
+				287C964F1539CF5800513344 /* ottd_preloader.c */,
+			);
+			name = "shared source";
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		28A5DD611522120B00B01BD7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				287C96501539CF5800513344 /* ottd.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		28A5DD641522120B00B01BD7 /* openttdql */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28A5DD7F1522120B00B01BD7 /* Build configuration list for PBXNativeTarget "openttdql" */;
+			buildPhases = (
+				28A5DD5F1522120B00B01BD7 /* Sources */,
+				28A5DD601522120B00B01BD7 /* Frameworks */,
+				28A5DD611522120B00B01BD7 /* Headers */,
+				28A5DD621522120B00B01BD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = openttdql;
+			productName = openttdql;
+			productReference = 28A5DD651522120B00B01BD7 /* openttdql.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28A5DD5A1522120B00B01BD7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "The OpenTTD team";
+			};
+			buildConfigurationList = 28A5DD5D1522120B00B01BD7 /* Build configuration list for PBXProject "openttdql" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 28A5DD581522120B00B01BD7;
+			productRefGroup = 28A5DD661522120B00B01BD7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28A5DD641522120B00B01BD7 /* openttdql */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28A5DD621522120B00B01BD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28A5DD751522120B00B01BD7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28A5DD5F1522120B00B01BD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28A5DD771522120B00B01BD7 /* GenerateThumbnailForURL.c in Sources */,
+				28A5DD791522120B00B01BD7 /* GeneratePreviewForURL.c in Sources */,
+				28A5DD7B1522120B00B01BD7 /* main.c in Sources */,
+				28C1A0AB1535E4830081184C /* ottd_cg.c in Sources */,
+				287C96511539CF5800513344 /* ottd_loader.c in Sources */,
+				287C96521539CF5800513344 /* ottd_png.c in Sources */,
+				287C96531539CF5800513344 /* ottd_preloader.c in Sources */,
+				287C96891539FF7700513344 /* ottd_date.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		28A5DD731522120B00B01BD7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28A5DD741522120B00B01BD7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28A5DD7D1522120B00B01BD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.7;
+				VALID_ARCHS = "i386 x86_64 ppc ppc64";
+			};
+			name = Debug;
+		};
+		28A5DD7E1522120B00B01BD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_OUTPUT_FORMAT = binary;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx10.7;
+				VALID_ARCHS = "i386 x86_64 ppc ppc64";
+			};
+			name = Release;
+		};
+		28A5DD801522120B00B01BD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "openttdql-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = "openttdql-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = (
+					/usr/local/lib/liblzma.a,
+					/usr/local/lib/liblzo2.a,
+				);
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+				USER_HEADER_SEARCH_PATHS = ../;
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		28A5DD811522120B00B01BD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "openttdql-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = "openttdql-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = (
+					/usr/local/lib/liblzma.a,
+					/usr/local/lib/liblzo2.a,
+				);
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+				USER_HEADER_SEARCH_PATHS = ../;
+				VALID_ARCHS = x86_64;
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28A5DD5D1522120B00B01BD7 /* Build configuration list for PBXProject "openttdql" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28A5DD7D1522120B00B01BD7 /* Debug */,
+				28A5DD7E1522120B00B01BD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28A5DD7F1522120B00B01BD7 /* Build configuration list for PBXNativeTarget "openttdql" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28A5DD801522120B00B01BD7 /* Debug */,
+				28A5DD811522120B00B01BD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28A5DD5A1522120B00B01BD7 /* Project object */;
+}
