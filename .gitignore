@@ -1,0 +1,4 @@
+*.o
+ottd_preview
+*.sav
+*.scn
