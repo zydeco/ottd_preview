@@ -46,6 +46,7 @@ typedef struct ChunkProc {
 
 int ottd_skip_riff(FILE *fp, int verbose, ottd_t*save);
 int ottd_skip_array(FILE *fp, int verbose, ottd_t*save);
+int ottd_skip_LGRS(FILE *fp, int verbose, ottd_t*save);
 #define ottd_skip_sparse ottd_skip_array
 int ottd_read_MAPS(FILE *fp, int verbose, ottd_t*save);
 int ottd_read_MAPT(FILE *fp, int verbose, ottd_t*save);
@@ -87,7 +88,7 @@ static ChunkProc ChunkProcs[] = {
     {'ITBL', ottd_skip_array},
     {'LGRJ', ottd_skip_array},
     {'LGRP', ottd_skip_array},
-    {'LGRS', ottd_skip_array},
+    {'LGRS', ottd_skip_LGRS},
     {'M3HI', ottd_skip_riff},
     {'M3LO', ottd_skip_riff},
     {'MAP2', ottd_skip_riff},
@@ -355,6 +356,15 @@ int ottd_skip_array(FILE *fp, int verbose, ottd_t *save)
     }
     
     return 0;
+}
+
+int ottd_skip_LGRS(FILE *fp, int verbose, ottd_t *save)
+{
+    if (save->version < 191) {
+        return ottd_skip_array(fp, verbose, save);
+    } else {
+        return ottd_skip_riff(fp, verbose, save);
+    }
 }
 
 int ottd_read_MAPS(FILE *fp, int verbose, ottd_t *save)
